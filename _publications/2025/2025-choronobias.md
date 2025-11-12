@@ -14,5 +14,5 @@ authors:
 - Sandon Park
 
 links:
-  Openreview: https://openreview.net/forum?id=7vuMXtHBkB&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DEMNLP%2F2025%2FConference%2FAuthors%23your-submissions)
+  ACLanthology: https://aclanthology.org/2025.findings-emnlp.405/
 ---

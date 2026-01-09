@@ -2,8 +2,8 @@
 title: "Plane Geometry Problem Solving with Multi-modal Reasoning: A Survey"
 date: 2025-01-01 00:00:00 +0900
 selected: false
-pub: ""
-pub_date: "2025"
+pub: "EACL Findings"
+pub_date: "2026"
 abstract: >-
   
 authors:

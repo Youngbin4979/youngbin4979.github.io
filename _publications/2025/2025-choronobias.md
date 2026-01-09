@@ -1,5 +1,5 @@
 ---
-title: "ChronoBias: A Benchmark for Evaluating Temporal Group Bias in the Time-sensitive Knowledge of Large Language Models"
+title: "ChronoBias: A Benchmark for Evaluating Time-conditional Group Bias in the Time-sensitive Knowledge of Large Language Models"
 date: 2025-01-01 00:00:00 +0900
 selected: false
 pub: "EMNLP Findings"

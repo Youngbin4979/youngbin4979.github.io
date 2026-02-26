@@ -15,4 +15,5 @@ authors:
 
 links:
   ACLanthology: https://aclanthology.org/2025.findings-emnlp.405/
+  Github: https://github.com/kmkim95/ChronoBias
 ---

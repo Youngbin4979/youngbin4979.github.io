@@ -13,12 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+url: "https://youngbin4979.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
+
+title: "Youngbin Choi"
+description: "Youngbin Choi - Ph.D. Student at POSTECH Machine Learning Lab. Research on human-AI collaboration, LLM personalization, and reinforcement learning."
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-email-protect
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

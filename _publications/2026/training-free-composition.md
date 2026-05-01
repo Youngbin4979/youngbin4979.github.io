@@ -1,8 +1,8 @@
 ---
 title: "Training-free Composition of Pre-trained GFlowNets for Multi-Objective Generation"
-date: 2026-02-23 00:00:00 +0900
+date: 2026-05-01 00:00:00 +0900
 selected: false
-pub: ""
+pub: "ICML"
 pub_date: "2026"
 abstract: >-
   

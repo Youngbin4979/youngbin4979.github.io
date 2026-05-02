@@ -2,7 +2,7 @@
 title: "GeoDANO: Geometric VLM with Domain Agnostic Vision Encoder"
 date: 2025-01-01 00:00:00 +0900
 selected: false
-pub: "EMNLP Findings"
+pub: "EMNLP-Findings"
 pub_date: "2025"
 abstract: >-
   

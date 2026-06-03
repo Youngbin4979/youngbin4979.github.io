@@ -10,7 +10,7 @@ authors:
 - Kyungmin Kim*
 - Youngbin Choi*
 - Seoyeon Lee
-- Suhyun Jun
+- Suhyeon Jun
 - Dongwoo Kim†
 - Sangdon Park†
 links:

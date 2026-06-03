@@ -21,7 +21,7 @@
         {%- assign has_corresponding = true -%}
     {%- elsif last_char == "†" -%}
         {%- assign key = _key | split: "†" | first -%}
-        {%- assign mark = "†" -%}
+        {%- assign mark = '<sup>†</sup>' -%}
         {%- assign has_co_advising = true -%}
     {%- else -%}
         {%- assign key = _key -%}
@@ -63,7 +63,7 @@
     {%- endif -%}
     {%- if has_co_advising -%}
         {%- if has_eq_contrib or has_corresponding -%}, {% endif -%}
-        † <i> co-advising</i>
+        <sup>†</sup> <i> co-advising</i>
     {%- endif -%}
 )</mark>
 {%- endif -%}

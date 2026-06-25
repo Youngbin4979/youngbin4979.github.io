@@ -2,7 +2,7 @@
 title: "Interaction-Aware Influence Functions for Group Attribution"
 date: 2026-05-18 00:00:00 +0900
 selected: false
-pub: ""
+pub: "ICML Workshop MechInterp"
 pub_date: "2026"
 abstract: >-
   

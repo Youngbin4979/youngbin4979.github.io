@@ -14,4 +14,5 @@ authors:
 - Dongwoo Kim†
 - Sangdon Park†
 links:
+  Arxiv: https://arxiv.org/abs/2606.25447
 ---

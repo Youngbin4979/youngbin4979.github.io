@@ -5,12 +5,36 @@ navbar_title: Publications
 ---
 
 {% assign all_pubs = site.publications | sort: "date" | reverse %}
-{% assign working_pubs = all_pubs | where_exp: "item", "item.pub == nil" %}
-{% assign empty_pubs = all_pubs | where_exp: "item", "item.pub == ''" %}
-{% assign working_pubs = working_pubs | concat: empty_pubs %}
-{% assign regular_pubs = all_pubs | where_exp: "item", "item.pub != nil" %}
-{% assign regular_pubs = regular_pubs | where_exp: "item", "item.pub != ''" %}
-{% assign pubs_by_year = regular_pubs | sort: "date" | reverse | group_by_exp: "item", "item.pub_date" %}
+
+{% comment %}
+  Placement rules:
+  - pub missing/empty          -> Working Papers (shown as "Under review")
+  - pub contains "Workshop"    -> Working Papers (venue shown as-is)
+  - frontmatter `preprint: true`  forces a paper into Working Papers
+  - frontmatter `preprint: false` forces a paper into the yearly publication list
+{% endcomment %}
+{% assign working_pubs = "" | split: "" %}
+{% assign regular_pubs = "" | split: "" %}
+{% for item in all_pubs %}
+    {% assign is_preprint = false %}
+    {% if item.pub == nil or item.pub == "" %}
+        {% assign is_preprint = true %}
+    {% elsif item.pub contains "Workshop" %}
+        {% assign is_preprint = true %}
+    {% endif %}
+    {% if item.preprint == true %}
+        {% assign is_preprint = true %}
+    {% elsif item.preprint == false %}
+        {% assign is_preprint = false %}
+    {% endif %}
+    {% if is_preprint %}
+        {% assign working_pubs = working_pubs | push: item %}
+    {% else %}
+        {% assign regular_pubs = regular_pubs | push: item %}
+    {% endif %}
+{% endfor %}
+
+{% assign pubs_by_year = regular_pubs | group_by_exp: "item", "item.pub_date" %}
 
 <div class="row">
     <div class="col-12">
@@ -18,12 +42,20 @@ navbar_title: Publications
         <h2 class="pt-4" id="working-papers">Working Papers</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl publication-list">
             {% for item in working_pubs %}
-                {% include widgets/publication_item.html 
-                    item=item 
-                    hide_bottom_border=forloop.last 
-                    first=forloop.first 
-                    last=forloop.last 
-                    pub_status="Under review" %}
+                {% if item.pub == nil or item.pub == "" %}
+                    {% include widgets/publication_item.html
+                        item=item
+                        hide_bottom_border=forloop.last
+                        first=forloop.first
+                        last=forloop.last
+                        pub_status="Under review" %}
+                {% else %}
+                    {% include widgets/publication_item.html
+                        item=item
+                        hide_bottom_border=forloop.last
+                        first=forloop.first
+                        last=forloop.last %}
+                {% endif %}
             {% endfor %}
         </div>
         {% endif %}
@@ -32,10 +64,10 @@ navbar_title: Publications
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl publication-list">
             {% for item in year.items %}
-                {% include widgets/publication_item.html 
-                    item=item 
-                    hide_bottom_border=forloop.last 
-                    first=forloop.first 
+                {% include widgets/publication_item.html
+                    item=item
+                    hide_bottom_border=forloop.last
+                    first=forloop.first
                     last=forloop.last %}
             {% endfor %}
         </div>

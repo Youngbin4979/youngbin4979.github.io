@@ -1,8 +1,8 @@
 ---
 title: "Long Live the Librarian! A Persistent Search Sub-Agent for Energy-Efficient Multi-Agent Software Engineering Systems"
-date: 2026-05-28 00:00:00 +0900
+date: 2026-08-20 00:00:00 +0900
 selected: false
-pub: ""
+pub: "EMNLP"
 pub_date: "2026"
 abstract: >-
   

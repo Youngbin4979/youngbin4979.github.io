@@ -1,8 +1,8 @@
 ---
 title: "The Interplay of Harness Design and Post-Training in LLM Agents"
-date: 2026-06-03 00:00:00 +0900
+date: 2026-08-20 00:00:00 +0900
 selected: true
-pub: "ICML Workshop RLxF"
+pub: "EMNLP-Findings"
 pub_date: "2026"
 abstract: >-
   

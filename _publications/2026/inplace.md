@@ -4,6 +4,7 @@ date: 2026-08-20 00:00:00 +0900
 selected: true
 pub: "EMNLP"
 pub_date: "2026"
+pub_last: "<b>(Oral)</b>"
 abstract: >-
   
 authors:

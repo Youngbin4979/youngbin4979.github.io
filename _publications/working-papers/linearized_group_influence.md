@@ -1,5 +1,5 @@
 ---
-title: "Anatomy of Linearized Group Influence: From a Bregman Geometric Perspective"
+title: "Groups Don't Move as One: A Bregman Clustering View of Linearized Group Influence"
 date: 2026-09-30 00:00:00 +0900
 selected: false
 pub: "NeurIPS Workshop ATTRIB"

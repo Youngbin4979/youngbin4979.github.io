@@ -13,5 +13,5 @@ authors:
 - MoonJeong Park
 - Dongwoo Kim
 links:
-  OpenReview: https://openreview.net/forum?id=4Yn68SYxWF
+  Arxiv: https://arxiv.org/abs/2610.14809
 ---

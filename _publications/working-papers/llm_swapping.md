@@ -1,9 +1,9 @@
 ---
-title: "CoPL: Collaborative Preference Learning for Personalizing LLMs"
-date: 2025-01-01 00:00:00 +0900
+title: "New Model, Old Habits: Behavior Transfer under Model Swapping in Multi-Session LLM Agents"
+date: 2026-10-14 00:00:00 +0900
 selected: true
-pub: "EMNLP"
-pub_date: "2025"
+pub: "Arxiv"
+pub_date: "2026"
 abstract: >-
   
 authors:

@@ -25,10 +25,9 @@ short_bio: >-
     I am a researcher at the <a href="https://ml.postech.ac.kr/" target="_blank">Machine Learning Lab (ML Lab)</a>, POSTECH, advised by <a href="https://dongwookim-ml.github.io/" target="_blank">Prof. Dongwoo Kim</a>.
   </p>
   <p>
-    My research interests center on <strong>human–AI collaboration</strong>, <strong>personalization of large language models (LLMs)</strong>, and <strong>reinforcement learning</strong>.
-    I explore how people can more effectively interact with AI systems through feedback, developing methods that make models easier to guide and more efficient to refine.
-    I also work on building personalized LLMs that adapt to diverse user preferences, designing frameworks that generalize even to unseen users.
-    Ultimately, my goal is to create AI assistants that are not only powerful, but also reliable, adaptable, and aligned with individual needs.
+    My research studies how the context a large language model (LLM) operates in, namely its <strong>interaction history</strong>, <strong>user feedback</strong>, and the <strong>harness</strong> around it, shapes model behavior.
+    Building on this understanding, I develop methods that make LLMs easier to guide, more efficient to refine, and adaptive to individual users.
+    My work spans <strong>human–AI collaboration</strong>, <strong>personalization of LLMs</strong>, and <strong>reinforcement learning for LLMs</strong>.
   </p>
 
 portrait_url: /profile.jpg
